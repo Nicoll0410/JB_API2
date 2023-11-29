@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/api/citas HTTP/1.1
+Content-Type: application/json
+
+{
+    "fecha_hora": "07/01/2024 14:55 p.m",
+    "direccion": "Cra 69 # 94-23",
+    "diagnostico": "onsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore."
+}
+
+//Mostrar todos los documentos
+###
+GET http://localhost:3000/api/citas HTTP/1.1
+
+
+//Mostrar por ID
+###
+GET http://localhost:3000/api/citas/6567828831209c9b49db1fe4 HTTP/1.1
+
+
+//Borrar por ID
+### 
+DELETE http://localhost:3000/api/citas/6567828831209c9b49db1fe4 HTTP/1.1
+
+
+//Editar por ID
+###
+PUT http://localhost:3000/api/citas/6567833731209c9b49db1fe6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "fecha_hora": "30/09/2023 12:10 p.m",
+    "direccion": "Cll 45 # 12-30",
+    "diagnostico": "ed ja."
+}
